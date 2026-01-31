@@ -378,4 +378,10 @@ body {
 .song-mode .grade-title {
   display: none;
 }
-
+#heroTitle{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:88vw;
+  font-size:clamp(22px,7vw,40px)
+}
