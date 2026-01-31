@@ -1,296 +1,347 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- ===== 基本設定 ===== -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover" />
+<head>
+  <!-- ===== 基本設定 ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
 
-    <!-- ===== タイトル・説明（SEO） ===== -->
-    <title>和太鼓部 定期演奏会 | SHIENRAKU</title>
-    <meta
-      name="description"
-      content="九州産業高校和太鼓部 第6回定期演奏会。演目・出演者・部員一覧を掲載。"
-    />
+  <!-- ===== タイトル・説明（SEO） ===== -->
+  <title>和太鼓部 定期演奏会 | SHIENRAKU</title>
+  <meta name="description" content="九州産業高校和太鼓部 第6回定期演奏会。演目・出演者・部員一覧を掲載。">
 
-    <!-- ===== OGP（検索・SNS表示最適化） ===== -->
-    <meta property="og:title" content="和太鼓部 定期演奏会 | SHIENRAKU" />
-    <meta
-      property="og:description"
-      content="九州産業高校和太鼓部 第6回定期演奏会"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ja_JP" />
+  <!-- ===== OGP（検索・SNS表示最適化） ===== -->
+  <meta property="og:title" content="和太鼓部 定期演奏会 | SHIENRAKU">
+  <meta property="og:description" content="九州産業高校和太鼓部 第6回定期演奏会">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
 
-    <!-- ===== モバイル最適化 ===== -->
-    <meta name="theme-color" content="#000000" />
+  <!-- ===== モバイル最適化 ===== -->
+  <meta name="theme-color" content="#000000">
 
-    <!-- ===== スタイル ===== -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body
-  >
-    <!-- ===== ヘッダー ===== -->
-    <header class="header">
-      <div class="nav-left">
-        <span class="icon">?</span>
-        <span>HOME</span>
-        <span id="memberBtn">MEMBER</span>
-        <span>HISTORY</span>
-      </div>
-      <button class="search-box" id="searchBtn">Search🔍</button>
-    </header>
-    <hr class="divider" />
+  <!-- ===== スタイル ===== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- ===== ヒーロー ===== -->
-    <section class="hero">
-      <img src="https://i.postimg.cc/vDFVy5V1/IMG-2911.jpg" alt="九州産業高等学校和太鼓部　第五回定期演奏会の演奏写真" />
-      <div class="hero-text">
-        <div class="small" id="hellow">The 6th Annual Concert of</div>
-        <h1 id="heroTitle">SHIENRAKU</h1>
-        <div class="small" id="heroSub">
-          The Japanese Drum Club<br />
-          of Kyushu Sangyo High School.
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== タブ ===== -->
-    <div class="tabs">
-      <button class="tab active" data-target="concert6">
-        第１部；第6回定期演奏会
-      </button>
-      <button class="tab" data-target="graduation11">
-        第２部；11代目卒業LIVE
-      </button>
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <div class="nav-left">
+      <span class="icon">?</span>
+      <span>HOME</span>
+      <span id="memberBtn">MEMBER</span>
+      <span>HISTORY</span>
     </div>
+    <button class="search-box" id="searchBtn">Search🔍</button>
+  </header>
+  <hr class="divider" />
 
-    <!-- ===== プログラム ===== -->
-    <div class="program">
-      <!-- 第6回定期演奏会 -->
-      <ul class="program-list" id="concert6">
-        <li class="song" data-song="zankyo">
-          <div class="song-header">
-            <span class="song-title">残響</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="sairei">
-          <div class="song-header">
-            <span class="song-title">祭礼</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲の説明<br /></div>
-        </li>
-
-        <li class="song" data-song="uijin">
-          <div class="song-header">
-            <span class="song-title">初陣</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="rindou">
-          <div class="song-header">
-            <span class="song-title">臨道</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="sainosai">
-          <div class="song-header">
-            <span class="song-title">祭ノ祭</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="kyoran">
-          <div class="song-header">
-            <span class="song-title">華嵐</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="ikko">
-          <div class="song-header">
-            <span class="song-title">一鼓</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="gotenreppa">
-          <div class="song-header">
-            <span class="song-title">轟天裂破</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="shienraku">
-          <div class="song-header">
-            <span class="song-title">紫焔楽</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="irodori">
-          <div class="song-header">
-            <span class="song-title">百心一花</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="shidare">
-          <div class="song-header">
-            <span class="song-title">紫打流</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="hotobashiru">
-          <div class="song-header">
-            <span class="song-title">躍</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="fujinraijin">
-          <div class="song-header">
-            <span class="song-title">風神雷神</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="sankyu">
-          <div class="song-header">
-            <span class="song-title">3月9日(篠笛)</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="shonomai">
-          <div class="song-header">
-            <span class="song-title">笑ノ舞</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-      </ul>
-
-      <!-- 11代目卒業LIVE -->
-      <ul class="program-list hidden" id="graduation11">
-        <li class="song" data-song="thunder">
-          <div class="song-header">
-            <span class="song-title">THUNDER</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="miyabi">
-          <div class="song-header">
-            <span class="song-title">京雅</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="gou">
-          <div class="song-header">
-            <span class="song-title">轟</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="ikusa">
-          <div class="song-header">
-            <span class="song-title">戦</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="aya">
-          <div class="song-header">
-            <span class="song-title">綺</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="seikai">
-          <div class="song-header">
-            <span class="song-title">正解(琴)</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="three">
-          <div class="song-header">
-            <span class="song-title">3years(篠笛)</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="ichigen">
-          <div class="song-header">
-            <span class="song-title">壱玄の和音</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="saisai">
-          <div class="song-header">
-            <span class="song-title">祭ノ祭</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-
-        <li class="song" data-song="gassai">
-          <div class="song-header">
-            <span class="song-title">合祭</span>
-            <button class="toggle">↪︎</button>
-          </div>
-          <div class="song-detail">曲説明<br /></div>
-        </li>
-      </ul>
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero">
+    <img src="https://i.postimg.cc/vDFVy5V1/IMG-2911.jpg" alt="演奏写真">
+    <div class="hero-text">
+      <div class="small" id="hellow">The 6th Annual Concert of</div>
+      <h1 id="heroTitle">SHIENRAKU</h1>
+      <div class="small" id="heroSub">
+        The Japanese Drum Club<br>
+        of Kyushu Sangyo High School.
+      </div>
     </div>
+  </section>
 
-    <!-- ===== MEMBER モーダル ===== -->
-    <div id="memberModal" class="modal hidden">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>部員一覧(総勢141名)</h2>
-          <button id="closeMember" class="close-btn">✕</button>
+  <!-- ===== タブ ===== -->
+  <div class="tabs">
+    <button class="tab active" data-target="concert6">第１部；第6回定期演奏会</button>
+    <button class="tab" data-target="graduation11">第２部；11代目卒業LIVE</button>
+  </div>
+
+  <!-- ===== プログラム ===== -->
+  <div class="program">
+
+    <!-- 第6回定期演奏会 -->
+    <ul class="program-list" id="concert6">
+
+      <li class="song" data-song="zankyo">
+        <div class="song-header">
+          <span class="song-title">残響</span>
+          <button class="toggle">↪︎</button>
         </div>
-
-        <div class="grade-nav" id="gradeNav">
-          <button class="grade-btn" data-grade="3">3年(計70名)</button>
-          <button class="grade-btn" data-grade="2">2年(計43名)</button>
-          <button class="grade-btn" data-grade="1">1年(計29名)</button>
+        <div class="song-detail">
+          曲説明<br>
         </div>
+      </li>
 
-        <div class="member-list">
-          <!-- 3年生 -->
-          <div id="grade3" class="grade-group" data-grade="3">
-            <div class="grade-title">三年生</div>
+      <li class="song" data-song="sairei">
+        <div class="song-header">
+          <span class="song-title">祭礼</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲の説明<br>
+        </div>
+      </li>
+
+      <li class="song" data-song="uijin">
+        <div class="song-header">
+          <span class="song-title">初陣</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="rindou">
+        <div class="song-header">
+          <span class="song-title">臨道</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+
+      <li class="song" data-song="sainosai">
+        <div class="song-header">
+          <span class="song-title">祭ノ祭</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+
+      <li class="song" data-song="kyoran">
+        <div class="song-header">
+          <span class="song-title">華嵐</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+            <li class="song" data-song="ikko">
+        <div class="song-header">
+          <span class="song-title">一鼓</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+            <li class="song" data-song="gotenreppa">
+        <div class="song-header">
+          <span class="song-title">轟天裂破</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="shienraku">
+        <div class="song-header">
+          <span class="song-title">紫焔楽</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="irodori">
+        <div class="song-header">
+          <span class="song-title">百心一花</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="shidare">
+        <div class="song-header">
+          <span class="song-title">紫打流</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="hotobashiru">
+        <div class="song-header">
+          <span class="song-title">躍</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="fujinraijin">
+        <div class="song-header">
+          <span class="song-title">風神雷神</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="sankyu">
+        <div class="song-header">
+          <span class="song-title">3月9日(篠笛)</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="shonomai">
+        <div class="song-header">
+          <span class="song-title">笑ノ舞</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+    </ul>
+      
+    <!-- 11代目卒業LIVE -->
+    <ul class="program-list hidden" id="graduation11">
+    
+      <div id="noAppearanceMsg" class="hidden"
+       style="padding:20px; text-align:center; opacity:0.9;">
+    この部員は第2部「11代目卒業LIVE」への出演はありません
+  </div>
+
+      <li class="song" data-song="thunder">
+        <div class="song-header">
+          <span class="song-title">THUNDER</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+
+      <li class="song" data-song="miyabi">
+        <div class="song-header">
+          <span class="song-title">京雅</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="gou">
+        <div class="song-header">
+          <span class="song-title">轟</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+
+<li class="song" data-song="ikusa">
+        <div class="song-header">
+          <span class="song-title">戦</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="aya">
+        <div class="song-header">
+          <span class="song-title">綺</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="seikai">
+        <div class="song-header">
+          <span class="song-title">正解(琴)</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="three">
+        <div class="song-header">
+          <span class="song-title">3years(篠笛)</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="ichigen">
+        <div class="song-header">
+          <span class="song-title">壱玄の和音</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="saisai">
+        <div class="song-header">
+          <span class="song-title">祭ノ祭</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+      
+      <li class="song" data-song="gassai">
+        <div class="song-header">
+          <span class="song-title">合祭</span>
+          <button class="toggle">↪︎</button>
+        </div>
+        <div class="song-detail">
+          曲説明<br>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+<!-- ===== MEMBER モーダル ===== -->
+<div id="memberModal" class="modal hidden">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h2>部員一覧(総勢141名)</h2>
+      <button id="closeMember" class="close-btn">✕</button>
+    </div>
+    
+<div class="grade-nav" id="gradeNav">
+  <button class="grade-btn" data-grade="3">3年(計70名)</button>
+  <button class="grade-btn" data-grade="2">2年(計43名)</button>
+  <button class="grade-btn" data-grade="1">1年(計29名)</button>
+</div>
+
+    <div class="member-list">
+
+  <!-- 3年生 -->
+  <div id="grade3" class="grade-group" data-grade="3">
+  <div class="grade-title">三年生</div>
 
             <div
               class="member clickable"
@@ -1303,58 +1354,57 @@
       </div>
     </div>
 
-    <!-- ===== 検索モーダル ===== -->
-    <div id="searchModal" class="modal hidden">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>部員検索</h2>
-          <button id="closeSearch" class="close-btn">✕</button>
-        </div>
 
-        <div class="search-form">
-          <select id="searchGrade">
-            <option value="">学年</option>
-            <option value="3">3年</option>
-            <option value="2">2年</option>
-            <option value="1">1年</option>
-          </select>
+<div id="searchModal" class="modal hidden">
+  <div class="modal-content">
 
-          <select id="searchClass">
-            <option value="">組</option>
-            <option value="普1">普1組</option>
-            <option value="普2">普2組</option>
-            <option value="普3">普3組</option>
-            <option value="普4">普4組</option>
-            <option value="普5">普5組</option>
-            <option value="普6">普6組</option>
-            <option value="普7">普7組</option>
-            <option value="普8">普8組</option>
-            <option value="普9">普9組</option>
-            <option value="普10">普10組</option>
-            <option value="普11">普11組</option>
-            <option value="普12">普12組</option>
-            <option value="普13">普13組</option>
-            <option value="普14">普14組</option>
-            <option value="普15">普15組</option>
-            <option value="普16">普16組</option>
-            <option value="機1">機1組</option>
-            <option value="機2">機2組</option>
-            <option value="創1">創1組</option>
-            <option value="創2">創2組</option>
-            <option value="創3">創3組</option>
-          </select>
-          <input type="text" id="searchName" placeholder="名前（漢字）" />
-        </div>
-
-        <div id="searchResults" class="search-results"></div>
-      </div>
+    <div class="modal-header">
+      <h2>部員検索</h2>
+      <button id="closeSearch" class="close-btn">✕</button>
     </div>
 
-    <!-- ===== JS ===== -->
-    <script src="script.js"></script>
-  </body>
+    <div class="search-form">
+      <select id="searchGrade">
+        <option value="">学年</option>
+        <option value="3">3年</option>
+        <option value="2">2年</option>
+        <option value="1">1年</option>
+      </select>
+
+     <select id="searchClass">
+  <option value="">組</option>
+  <option value="普1">普1組</option>
+  <option value="普2">普2組</option>
+  <option value="普3">普3組</option>
+  <option value="普4">普4組</option>
+  <option value="普5">普5組</option>
+  <option value="普6">普6組</option>
+  <option value="普7">普7組</option>
+  <option value="普8">普8組</option>
+  <option value="普9">普9組</option>
+  <option value="普10">普10組</option>
+  <option value="普11">普11組</option>
+  <option value="普12">普12組</option>
+  <option value="普13">普13組</option>
+  <option value="普14">普14組</option>
+  <option value="普15">普15組</option>
+  <option value="普16">普16組</option>
+  <option value="機1">機1組</option>
+  <option value="機2">機2組</option>
+  <option value="創1">創1組</option>
+  <option value="創2">創2組</option>
+  <option value="創3">創3組</option>
+</select>
+      <input type="text" id="searchName" placeholder="名前（漢字）">
+    </div>
+
+    <div id="searchResults" class="search-results"></div>
+
+  </div>
+</div>
+
+  <!-- ===== JS ===== -->
+  <script src="script.js"></script>
+  
+</body>
 </html>
-
-
-
-
