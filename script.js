@@ -141,10 +141,12 @@ function runSearch() {
   document.querySelectorAll(".member").forEach((member) => {
     const text = member.textContent;
 
-    const ok =
-      (!grade || text.charAt(0) === grade) &&
-      (!cls || text.includes(cls + "組")) &&
-      (!name || text.includes(name));
+    const clean = text.trim();   // 先頭の見えないスペース対策
+
+const ok =
+  (!grade || clean.startsWith(grade)) &&
+  (!cls || clean.includes(cls + "組")) &&
+  (!name || clean.includes(name));
 
     if (ok) {
       const div = document.createElement("div");
@@ -165,26 +167,35 @@ resultsBox.addEventListener("click", e => {
   if (!item) return;
 
   const songs = item.dataset.songs.split(" ");
-  const text = item.textContent;
+  const text = item.textContent.trim();   // ← これ超大事
 
   searchModal.classList.add("hidden");
 
-  // --- 学年判定 ---
-  const grade = text.charAt(0); // "3普10組..." → "3"
+  // ===== 学年を“確実に”取得 =====
+  const grade = text.trim().charAt(0);
 
-  // 1・2年なら第1部だけに固定
-  if (grade === "1" || grade === "2") {
-    document.querySelector('[data-target="concert6"]').click();
-    document.querySelector('[data-target="graduation11"]').style.display =
-      "none";
-  } else {
-    // 3年 or 不明 → 両方OK
-    document.querySelector('[data-target="graduation11"]').style.display = "";
-  }
+  const tab1 = document.querySelector('[data-target="concert6"]');
+  const tab2 = document.querySelector('[data-target="graduation11"]');
 
-  // 曲フィルタ
+// ===== 第2部メッセージ制御 =====
+const noMsg = document.getElementById("noAppearanceMsg");
+
+if (grade === "1" || grade === "2") {
+
+  // メッセージ表示
+  noMsg.classList.remove("hidden");
+
+} else {
+
+  // 3年はメッセージ消す
+  noMsg.classList.add("hidden");
+
+}
+
+  // ===== 曲フィルタ =====
   document.querySelectorAll(".song").forEach(song => {
-    song.style.display = songs.includes(song.dataset.song) ? "block" : "none";
+    song.style.display =
+      songs.includes(song.dataset.song) ? "block" : "none";
   });
 
   //ヒーロー部分書き換え
@@ -233,4 +244,3 @@ document.querySelectorAll(".grade-nav button").forEach((btn) => {
     }
   });
 });
-
