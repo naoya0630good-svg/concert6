@@ -27,9 +27,9 @@
   <header class="header">
     <div class="nav-left">
       <span class="icon">?</span>
-      <span>HOME</span>
+      <span id="homeBtn">HOME</span>
       <span id="memberBtn">MEMBER</span>
-      <span>HISTORY</span>
+      <span id="historyBtn">HISTORY</span>
     </div>
     <button class="search-box" id="searchBtn">Search🔍</button>
   </header>
@@ -47,7 +47,6 @@
       </div>
     </div>
   </section>
-
   <!-- ===== タブ ===== -->
   <div class="tabs">
     <button class="tab active" data-target="concert6">第１部；第6回定期演奏会</button>
@@ -62,7 +61,7 @@
 
       <li class="song" data-song="zankyo">
         <div class="song-header">
-          <span class="song-title">残響</span>
+          <span class="song-title">1.残響</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -72,7 +71,7 @@
 
       <li class="song" data-song="sairei">
         <div class="song-header">
-          <span class="song-title">祭礼</span>
+          <span class="song-title">⒉祭礼</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -82,7 +81,7 @@
 
       <li class="song" data-song="uijin">
         <div class="song-header">
-          <span class="song-title">初陣</span>
+          <span class="song-title">⒊初陣</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -92,7 +91,7 @@
       
       <li class="song" data-song="rindou">
         <div class="song-header">
-          <span class="song-title">臨道</span>
+          <span class="song-title">⒋臨道</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -102,7 +101,7 @@
 
       <li class="song" data-song="sainosai">
         <div class="song-header">
-          <span class="song-title">祭ノ祭</span>
+          <span class="song-title">⒌祭ノ祭</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -112,7 +111,7 @@
 
       <li class="song" data-song="kyoran">
         <div class="song-header">
-          <span class="song-title">華嵐</span>
+          <span class="song-title">⒍華嵐</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -122,7 +121,7 @@
       
             <li class="song" data-song="ikko">
         <div class="song-header">
-          <span class="song-title">一鼓</span>
+          <span class="song-title">⒎一鼓</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -132,7 +131,7 @@
       
             <li class="song" data-song="gotenreppa">
         <div class="song-header">
-          <span class="song-title">轟天裂破</span>
+          <span class="song-title">⒏轟天裂破</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -142,7 +141,7 @@
       
       <li class="song" data-song="shienraku">
         <div class="song-header">
-          <span class="song-title">紫焔楽</span>
+          <span class="song-title">⒐紫焔楽</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -152,7 +151,7 @@
       
       <li class="song" data-song="irodori">
         <div class="song-header">
-          <span class="song-title">百心一花</span>
+          <span class="song-title">10.百心一花</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -162,7 +161,7 @@
       
       <li class="song" data-song="shidare">
         <div class="song-header">
-          <span class="song-title">紫打流</span>
+          <span class="song-title">11.紫打流</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -172,7 +171,7 @@
       
       <li class="song" data-song="hotobashiru">
         <div class="song-header">
-          <span class="song-title">躍</span>
+          <span class="song-title">12.躍</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -182,7 +181,7 @@
       
       <li class="song" data-song="fujinraijin">
         <div class="song-header">
-          <span class="song-title">風神雷神</span>
+          <span class="song-title">13.風神雷神</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -192,7 +191,7 @@
       
       <li class="song" data-song="sankyu">
         <div class="song-header">
-          <span class="song-title">3月9日(篠笛)</span>
+          <span class="song-title">14.3月9日(篠笛)</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -202,7 +201,7 @@
       
       <li class="song" data-song="shonomai">
         <div class="song-header">
-          <span class="song-title">笑ノ舞</span>
+          <span class="song-title">15.笑ノ舞</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -221,7 +220,7 @@
 
       <li class="song" data-song="thunder">
         <div class="song-header">
-          <span class="song-title">THUNDER</span>
+          <span class="song-title">1.THUNDER</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -231,7 +230,7 @@
 
       <li class="song" data-song="miyabi">
         <div class="song-header">
-          <span class="song-title">京雅</span>
+          <span class="song-title">2.京雅</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -241,7 +240,7 @@
       
       <li class="song" data-song="gou">
         <div class="song-header">
-          <span class="song-title">轟</span>
+          <span class="song-title">3.轟</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -251,7 +250,7 @@
 
 <li class="song" data-song="ikusa">
         <div class="song-header">
-          <span class="song-title">戦</span>
+          <span class="song-title">4.戦</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -261,7 +260,7 @@
       
       <li class="song" data-song="aya">
         <div class="song-header">
-          <span class="song-title">綺</span>
+          <span class="song-title">5.綺</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -271,7 +270,7 @@
       
       <li class="song" data-song="seikai">
         <div class="song-header">
-          <span class="song-title">正解(琴)</span>
+          <span class="song-title">6.正解(琴)</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -281,7 +280,7 @@
       
       <li class="song" data-song="three">
         <div class="song-header">
-          <span class="song-title">3years(篠笛)</span>
+          <span class="song-title">7.3years(篠笛)</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -291,7 +290,7 @@
       
       <li class="song" data-song="ichigen">
         <div class="song-header">
-          <span class="song-title">壱玄の和音</span>
+          <span class="song-title">8.壱玄の和音</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -301,7 +300,7 @@
       
       <li class="song" data-song="saisai">
         <div class="song-header">
-          <span class="song-title">祭ノ祭</span>
+          <span class="song-title">9.祭ノ祭</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -311,7 +310,7 @@
       
       <li class="song" data-song="gassai">
         <div class="song-header">
-          <span class="song-title">合祭</span>
+          <span class="song-title">10.合祭</span>
           <button class="toggle">↪︎</button>
         </div>
         <div class="song-detail">
@@ -1400,6 +1399,179 @@
 
     <div id="searchResults" class="search-results"></div>
 
+  </div>
+</div>
+
+
+<!-- ===== HISTORY ===== -->
+<section id="historySection" class="hidden">
+
+  <h2 class="history-title">HISTORY</h2>
+
+  <div class="history-timeline">
+
+    <!-- ===== 2021 ===== -->
+    <div class="time-item">
+      <div class="time-dot"></div>
+
+      <div class="time-content">
+        <span class="year">2021</span>
+        <h3>創部</h3>
+
+        <p>
+          九州産業高校和太鼓部、誕生。<br>
+          わずか10名からのスタート。<br>
+          「心に響く音」を目標に活動を開始。
+        </p>
+
+        <div class="time-photos slider">
+          <img src="img/2021_1.jpg">
+          <img src="img/2021_2.jpg">
+        </div>
+        <div class="dots"></div>
+      </div>
+    </div>
+
+
+    <!-- ===== 2023 ===== -->
+    <div class="time-item">
+      <div class="time-dot"></div>
+
+      <div class="time-content">
+        <span class="year">2023</span>
+        <h3>初の単独公演</h3>
+
+        <p>
+          ホールでの単独公演を実現。<br>
+          オリジナル曲「響縁」を初披露。
+        </p>
+
+        <div class="time-photos slider">
+          <img src="img/2023_1.jpg">
+          <img src="img/2023_2.jpg">
+          <div class="dots"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ===== 2024 ===== -->
+    <div class="time-item">
+      <div class="time-dot"></div>
+
+      <div class="time-content">
+        <span class="year">2024</span>
+        <h3>第6回定期演奏会</h3>
+
+        <p>
+          これまでで最大規模のステージへ。<br>
+          3学年そろった集大成。
+        </p>
+
+        <div class="time-photos slider">
+          <img src="img/2024_1.jpg">
+          <img src="img/2024_2.jpg">
+          <div class="dots"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- お気に入り一覧 -->
+<div id="favModal" class="modal hidden">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h2>お気に入り</h2>
+      <button id="closeFav" class="close-btn">×</button>
+    </div>
+
+    <div id="favList" class="member-list">
+      お気に入りはありません
+    </div>
+
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <div>© Kyushu Sangyo High School Japanese Drum Club</div>
+
+  <div class="footer-links">
+    <span id="openPolicy">プライバシーポリシー</span> |
+    <span id="openTerms">利用規約</span>
+  </div>
+</footer>
+
+<!-- ポリシーモーダル -->
+<div id="policyModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>プライバシーポリシー</h2>
+      <button class="close-btn" id="closePolicy">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <p>
+        本サイトは、九州産業高校和太鼓部の演奏会情報を掲載する目的で運営されています。
+      </p>
+
+      <h4>1. 個人情報について</h4>
+      <p>
+        本サイトでは、利用者の個人情報を収集していません。<br>
+        検索機能は端末内で動作し、外部に情報を送信しません。
+      </p>
+
+      <h4>2. 掲載情報</h4>
+      <p>
+        部員氏名等は、学校および本人の許可のもと掲載しています。
+      </p>
+
+      <h4>3. アクセス解析</h4>
+      <p>
+        アクセス解析ツールは使用していません。
+      </p>
+
+      <h4>4. お問い合わせ</h4>
+      <p>
+        掲載内容に関するお問い合わせは和太鼓部顧問までお願いします。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 利用規約モーダル -->
+<div id="termsModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>利用規約</h2>
+      <button class="close-btn" id="closeTerms">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <h4>1. 目的</h4>
+      <p>
+        本サイトは和太鼓部の活動紹介および演奏会案内を目的としています。
+      </p>
+
+      <h4>2. 免責事項</h4>
+      <p>
+        掲載情報には十分注意していますが、内容の正確性を保証するものではありません。<br>
+        本サイトの利用によって生じた損害について責任を負いません。
+      </p>
+
+      <h4>3. 著作権</h4>
+      <p>
+        サイト内の文章・写真・デザインの無断転載を禁止します。
+      </p>
+
+      <h4>4. 内容の変更</h4>
+      <p>
+        本サイトの内容は予告なく変更・削除されることがあります。
+      </p>
+    </div>
   </div>
 </div>
 
