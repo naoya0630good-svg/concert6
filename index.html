@@ -1,346 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <!-- ===== 基本設定 ===== -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+  <head>
+    <!-- ===== 基本設定 ===== -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,viewport-fit=cover"
+    />
 
-  <!-- ===== タイトル・説明（SEO） ===== -->
-  <title>和太鼓部 定期演奏会 | SHIENRAKU</title>
-  <meta name="description" content="九州産業高校和太鼓部 第6回定期演奏会。演目・出演者・部員一覧を掲載。">
+    <!-- ===== タイトル・説明（SEO） ===== -->
+    <title>和太鼓部 定期演奏会 | SHIENRAKU</title>
+    <meta
+      name="description"
+      content="九州産業高校和太鼓部 第6回定期演奏会。演目・出演者・部員一覧を掲載。"
+    />
 
-  <!-- ===== OGP（検索・SNS表示最適化） ===== -->
-  <meta property="og:title" content="和太鼓部 定期演奏会 | SHIENRAKU">
-  <meta property="og:description" content="九州産業高校和太鼓部 第6回定期演奏会">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP">
+    <!-- ===== OGP（検索・SNS表示最適化） ===== -->
+    <meta property="og:title" content="和太鼓部 定期演奏会 | SHIENRAKU" />
+    <meta
+      property="og:description"
+      content="九州産業高校和太鼓部 第6回定期演奏会"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
 
-  <!-- ===== モバイル最適化 ===== -->
-  <meta name="theme-color" content="#000000">
+    <!-- ===== モバイル最適化 ===== -->
+    <meta name="theme-color" content="#000000" />
 
-  <!-- ===== スタイル ===== -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- ===== ヘッダー ===== -->
-  <header class="header">
-    <div class="nav-left">
-      <span class="icon">?</span>
-      <span id="homeBtn">HOME</span>
-      <span id="memberBtn">MEMBER</span>
-      <span id="historyBtn">HISTORY</span>
-    </div>
-    <button class="search-box" id="searchBtn">Search🔍</button>
-  </header>
-  <hr class="divider" />
-
-  <!-- ===== ヒーロー ===== -->
-  <section class="hero">
-    <img src="https://i.postimg.cc/vDFVy5V1/IMG-2911.jpg" alt="演奏写真">
-    <div class="hero-text">
-      <div class="small" id="hellow">The 6th Annual Concert of</div>
-      <h1 id="heroTitle">SHIENRAKU</h1>
-      <div class="small" id="heroSub">
-        The Japanese Drum Club<br>
-        of Kyushu Sangyo High School.
+    <!-- ===== スタイル ===== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== ヘッダー ===== -->
+    <header class="header">
+      <div class="nav-left">
+        <span class="icon">?</span>
+        <span id="homeBtn">HOME</span>
+        <span id="memberBtn">MEMBER</span>
+        <span id="historyBtn">HISTORY</span>
       </div>
+      <button class="search-box" id="searchBtn">Search🔍</button>
+    </header>
+    <hr class="divider" />
+
+    <!-- ===== ヒーロー ===== -->
+    <section class="hero">
+      <img src="https://i.postimg.cc/vDFVy5V1/IMG-2911.jpg" alt="演奏写真" />
+      <div class="hero-text">
+        <div class="small" id="hellow">The 6th Annual Concert of</div>
+        <h1 id="heroTitle">SHIENRAKU</h1>
+        <div class="small" id="heroSub">
+          The Japanese Drum Club<br />
+          of Kyushu Sangyo High School.
+        </div>
+      </div>
+    </section>
+    <!-- ===== タブ ===== -->
+    <div class="tabs">
+      <button class="tab active" data-target="concert6">
+        第１部；第6回定期演奏会
+      </button>
+      <button class="tab" data-target="graduation11">
+        第２部；11代目卒業LIVE
+      </button>
     </div>
-  </section>
-  <!-- ===== タブ ===== -->
-  <div class="tabs">
-    <button class="tab active" data-target="concert6">第１部；第6回定期演奏会</button>
-    <button class="tab" data-target="graduation11">第２部；11代目卒業LIVE</button>
-  </div>
 
-  <!-- ===== プログラム ===== -->
-  <div class="program">
+    <!-- ===== プログラム ===== -->
+    <div class="program">
+      <!-- 第6回定期演奏会 -->
+      <ul class="program-list" id="concert6">
+        <li class="song" data-song="zankyo">
+          <div class="song-header">
+            <span class="song-title">1.残響</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-    <!-- 第6回定期演奏会 -->
-    <ul class="program-list" id="concert6">
+        <li class="song" data-song="sairei">
+          <div class="song-header">
+            <span class="song-title">⒉祭礼</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲の説明<br /></div>
+        </li>
 
-      <li class="song" data-song="zankyo">
-        <div class="song-header">
-          <span class="song-title">1.残響</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="uijin">
+          <div class="song-header">
+            <span class="song-title">⒊初陣</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="sairei">
-        <div class="song-header">
-          <span class="song-title">⒉祭礼</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲の説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="rindou">
+          <div class="song-header">
+            <span class="song-title">⒋臨道</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="uijin">
-        <div class="song-header">
-          <span class="song-title">⒊初陣</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="rindou">
-        <div class="song-header">
-          <span class="song-title">⒋臨道</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="sainosai">
+          <div class="song-header">
+            <span class="song-title">⒌祭ノ祭</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="sainosai">
-        <div class="song-header">
-          <span class="song-title">⒌祭ノ祭</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="kyoran">
+          <div class="song-header">
+            <span class="song-title">⒍華嵐</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="kyoran">
-        <div class="song-header">
-          <span class="song-title">⒍華嵐</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-            <li class="song" data-song="ikko">
-        <div class="song-header">
-          <span class="song-title">⒎一鼓</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-            <li class="song" data-song="gotenreppa">
-        <div class="song-header">
-          <span class="song-title">⒏轟天裂破</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="shienraku">
-        <div class="song-header">
-          <span class="song-title">⒐紫焔楽</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="irodori">
-        <div class="song-header">
-          <span class="song-title">10.百心一花</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="shidare">
-        <div class="song-header">
-          <span class="song-title">11.紫打流</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="hotobashiru">
-        <div class="song-header">
-          <span class="song-title">12.躍</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="fujinraijin">
-        <div class="song-header">
-          <span class="song-title">13.風神雷神</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="sankyu">
-        <div class="song-header">
-          <span class="song-title">14.3月9日(篠笛)</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="shonomai">
-        <div class="song-header">
-          <span class="song-title">15.笑ノ舞</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-    </ul>
-      
-    <!-- 11代目卒業LIVE -->
-    <ul class="program-list hidden" id="graduation11">
-    
-      <div id="noAppearanceMsg" class="hidden"
-       style="padding:20px; text-align:center; opacity:0.9;">
-    この部員は第2部「11代目卒業LIVE」への出演はありません
-  </div>
+        <li class="song" data-song="ikko">
+          <div class="song-header">
+            <span class="song-title">⒎一鼓</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="thunder">
-        <div class="song-header">
-          <span class="song-title">1.THUNDER</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="gotenreppa">
+          <div class="song-header">
+            <span class="song-title">⒏轟天裂破</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-      <li class="song" data-song="miyabi">
-        <div class="song-header">
-          <span class="song-title">2.京雅</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="gou">
-        <div class="song-header">
-          <span class="song-title">3.轟</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
+        <li class="song" data-song="shienraku">
+          <div class="song-header">
+            <span class="song-title">⒐紫焔楽</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-<li class="song" data-song="ikusa">
-        <div class="song-header">
-          <span class="song-title">4.戦</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="aya">
-        <div class="song-header">
-          <span class="song-title">5.綺</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="seikai">
-        <div class="song-header">
-          <span class="song-title">6.正解(琴)</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="three">
-        <div class="song-header">
-          <span class="song-title">7.3years(篠笛)</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="ichigen">
-        <div class="song-header">
-          <span class="song-title">8.壱玄の和音</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="saisai">
-        <div class="song-header">
-          <span class="song-title">9.祭ノ祭</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-      
-      <li class="song" data-song="gassai">
-        <div class="song-header">
-          <span class="song-title">10.合祭</span>
-          <button class="toggle">↪︎</button>
-        </div>
-        <div class="song-detail">
-          曲説明<br>
-        </div>
-      </li>
-    </ul>
+        <li class="song" data-song="irodori">
+          <div class="song-header">
+            <span class="song-title">10.百心一花</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-  </div>
+        <li class="song" data-song="shidare">
+          <div class="song-header">
+            <span class="song-title">11.紫打流</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-<!-- ===== MEMBER モーダル ===== -->
-<div id="memberModal" class="modal hidden">
-  <div class="modal-content">
+        <li class="song" data-song="hotobashiru">
+          <div class="song-header">
+            <span class="song-title">12.躍</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
 
-    <div class="modal-header">
-      <h2>部員一覧(総勢141名)</h2>
-      <button id="closeMember" class="close-btn">✕</button>
+        <li class="song" data-song="fujinraijin">
+          <div class="song-header">
+            <span class="song-title">13.風神雷神</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="sankyu">
+          <div class="song-header">
+            <span class="song-title">14.3月9日(篠笛)</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="shonomai">
+          <div class="song-header">
+            <span class="song-title">15.笑ノ舞</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+      </ul>
+
+      <!-- 11代目卒業LIVE -->
+      <ul class="program-list hidden" id="graduation11">
+        <div
+          id="noAppearanceMsg"
+          class="hidden"
+          style="padding: 20px; text-align: center; opacity: 0.9"
+        >
+          この部員は第2部「11代目卒業LIVE」への出演はありません
+        </div>
+
+        <li class="song" data-song="thunder">
+          <div class="song-header">
+            <span class="song-title">1.THUNDER</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="miyabi">
+          <div class="song-header">
+            <span class="song-title">2.京雅</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="gou">
+          <div class="song-header">
+            <span class="song-title">3.轟</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="ikusa">
+          <div class="song-header">
+            <span class="song-title">4.戦</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="aya">
+          <div class="song-header">
+            <span class="song-title">5.綺</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="seikai">
+          <div class="song-header">
+            <span class="song-title">6.正解(琴)</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="three">
+          <div class="song-header">
+            <span class="song-title">7.3years(篠笛)</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="ichigen">
+          <div class="song-header">
+            <span class="song-title">8.壱玄の和音</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="saisai">
+          <div class="song-header">
+            <span class="song-title">9.祭ノ祭</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+
+        <li class="song" data-song="gassai">
+          <div class="song-header">
+            <span class="song-title">10.合祭</span>
+            <button class="toggle">↪︎</button>
+          </div>
+          <div class="song-detail">曲説明<br /></div>
+        </li>
+      </ul>
     </div>
-    
-<div class="grade-nav" id="gradeNav">
-  <button class="grade-btn" data-grade="3">3年(計70名)</button>
-  <button class="grade-btn" data-grade="2">2年(計43名)</button>
-  <button class="grade-btn" data-grade="1">1年(計29名)</button>
-</div>
 
-    <div class="member-list">
+    <!-- ===== MEMBER モーダル ===== -->
+    <div id="memberModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>部員一覧(総勢141名)</h2>
+          <button id="closeMember" class="close-btn">✕</button>
+        </div>
 
-  <!-- 3年生 -->
-  <div id="grade3" class="grade-group" data-grade="3">
-  <div class="grade-title">三年生</div>
+        <div class="grade-nav" id="gradeNav">
+          <button class="grade-btn" data-grade="3">3年(計70名)</button>
+          <button class="grade-btn" data-grade="2">2年(計43名)</button>
+          <button class="grade-btn" data-grade="1">1年(計29名)</button>
+        </div>
+
+        <div class="member-list">
+          <!-- 3年生 -->
+          <div id="grade3" class="grade-group" data-grade="3">
+            <div class="grade-title">三年生</div>
 
             <div
               class="member clickable"
@@ -1353,214 +1312,386 @@
       </div>
     </div>
 
-
-<div id="searchModal" class="modal hidden">
-  <div class="modal-content">
-
-    <div class="modal-header">
-      <h2>部員検索</h2>
-      <button id="closeSearch" class="close-btn">✕</button>
-    </div>
-
-    <div class="search-form">
-      <select id="searchGrade">
-        <option value="">学年</option>
-        <option value="3">3年</option>
-        <option value="2">2年</option>
-        <option value="1">1年</option>
-      </select>
-
-     <select id="searchClass">
-  <option value="">組</option>
-  <option value="普1">普1組</option>
-  <option value="普2">普2組</option>
-  <option value="普3">普3組</option>
-  <option value="普4">普4組</option>
-  <option value="普5">普5組</option>
-  <option value="普6">普6組</option>
-  <option value="普7">普7組</option>
-  <option value="普8">普8組</option>
-  <option value="普9">普9組</option>
-  <option value="普10">普10組</option>
-  <option value="普11">普11組</option>
-  <option value="普12">普12組</option>
-  <option value="普13">普13組</option>
-  <option value="普14">普14組</option>
-  <option value="普15">普15組</option>
-  <option value="普16">普16組</option>
-  <option value="機1">機1組</option>
-  <option value="機2">機2組</option>
-  <option value="創1">創1組</option>
-  <option value="創2">創2組</option>
-  <option value="創3">創3組</option>
-</select>
-      <input type="text" id="searchName" placeholder="名前（漢字）">
-    </div>
-
-    <div id="searchResults" class="search-results"></div>
-
-  </div>
-</div>
-
-
-<!-- ===== HISTORY ===== -->
-<section id="historySection" class="hidden">
-
-  <h2 class="history-title">HISTORY</h2>
-
-  <div class="history-timeline">
-
-    <!-- ===== 2021 ===== -->
-    <div class="time-item">
-      <div class="time-dot"></div>
-
-      <div class="time-content">
-        <span class="year">2021</span>
-        <h3>創部</h3>
-
-        <p>
-          九州産業高校和太鼓部、誕生。<br>
-          わずか10名からのスタート。<br>
-          「心に響く音」を目標に活動を開始。
-        </p>
-
-        <div class="time-photos slider">
-          <img src="img/2021_1.jpg">
-          <img src="img/2021_2.jpg">
+    <div id="searchModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>部員検索</h2>
+          <button id="closeSearch" class="close-btn">✕</button>
         </div>
-        <div class="dots"></div>
+
+        <div class="search-form">
+          <select id="searchGrade">
+            <option value="">学年</option>
+            <option value="3">3年</option>
+            <option value="2">2年</option>
+            <option value="1">1年</option>
+          </select>
+
+          <select id="searchClass">
+            <option value="">組</option>
+            <option value="普1">普1組</option>
+            <option value="普2">普2組</option>
+            <option value="普3">普3組</option>
+            <option value="普4">普4組</option>
+            <option value="普5">普5組</option>
+            <option value="普6">普6組</option>
+            <option value="普7">普7組</option>
+            <option value="普8">普8組</option>
+            <option value="普9">普9組</option>
+            <option value="普10">普10組</option>
+            <option value="普11">普11組</option>
+            <option value="普12">普12組</option>
+            <option value="普13">普13組</option>
+            <option value="普14">普14組</option>
+            <option value="普15">普15組</option>
+            <option value="普16">普16組</option>
+            <option value="機1">機1組</option>
+            <option value="機2">機2組</option>
+            <option value="創1">創1組</option>
+            <option value="創2">創2組</option>
+            <option value="創3">創3組</option>
+          </select>
+          <input type="text" id="searchName" placeholder="名前（漢字）" />
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
       </div>
     </div>
 
+    <!-- ===== HISTORY ===== -->
+    <section id="historySection" class="hidden">
+      <h2 class="history-title">HISTORY</h2>
 
-    <!-- ===== 2023 ===== -->
-    <div class="time-item">
-      <div class="time-dot"></div>
+      <div class="history-timeline">
+        <!-- ===== 2009 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
 
-      <div class="time-content">
-        <span class="year">2023</span>
-        <h3>初の単独公演</h3>
+          <div class="time-content">
+            <span class="year">2009~</span>
+            <h3>出会い～</h3>
 
-        <p>
-          ホールでの単独公演を実現。<br>
-          オリジナル曲「響縁」を初披露。
-        </p>
+            <p>
+              とあるイベントで和太鼓の演奏を見た<br/>
+              現顧問の中村和弘先生が<br/>
+              九産に和太鼓部を創りたいと感じ、<br/>
+              学校(生徒会)に伝える
+            </p>
+            <div class="dots"></div>
+          </div>
+        </div>
 
-        <div class="time-photos slider">
-          <img src="img/2023_1.jpg">
-          <img src="img/2023_2.jpg">
-          <div class="dots"></div>
+        <!-- ===== 2014 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2014</span>
+            <h3>和太鼓部創部</h3>
+
+            <p>
+              １年生２名、２年生３名で始まる<br/>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2023_1.jpg" />
+              <img src="img/2023_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2015 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2015</span>
+            <h3>創部２年目</h3>
+
+            <p>
+              １年生１１名、２年生２名、３年生３名<br/>
+              ３学年がそろい、初めて高文連の大会に出場<br/>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2016 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2016</span>
+            <h3>創部３年目</h3>
+
+            <p>
+              ２度目となる高文連で優秀賞(２位)を獲得<br/>
+              この頃から地域のイベントに多数出演するようになる
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2019 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2019</span>
+            <h3>創部６年目</h3>
+
+            <p>
+              初めての合宿(６代目)<br/>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2020 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2020</span>
+            <h3>創部７年目</h3>
+
+            <p>
+              新型コロナのため行事・イベントが中止となる<br />
+              「シリタカ」の高３応援団のコーナーに出演<br/>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2021 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2021</span>
+            <h3>創部８年目</h3>
+
+            <p>
+              第１回定期演奏会(６代目卒業ＬＩＶＥ)開催<br/>
+              ８代目：高文連第３６回大会最優秀賞(１位)
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2022 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2022</span>
+            <h3>創部９年目</h3>
+
+            <p>
+              第２回定期演奏会(７代目卒業ＬＩＶＥ)開催<br/>
+              ８代目：高文連全国大会に出場<br/>
+              新型コロナ元年に入部した生徒たちが<br/>
+              創部初の全国出場を成し遂げる
+              初となる福岡ドームでの体育祭でフィナーレを飾る
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2023 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2023</span>
+            <h3>創部１０年目</h3>
+
+            <p>
+              第３回定期演奏会(８代目卒業ＬＩＶＥ)開催<br/>
+              １１代目前代未聞の１０１名(当初)が入部</br>
+              ９代目：博多どんたく港まつり「博多駅前広場」にて演奏</br>
+              芸術鑑賞会として、ＤＲＵＭ ＴＡＯが体育館にて演奏
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2024 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2024</span>
+            <h3>創部１１年目</h3>
+
+            <p>
+              第４回定期演奏会(９代目卒業ＬＩＶＥ)開催<br/>
+              二度目となる合宿(１０代目)<br/>
+              １０代目引退公演「紫響」開催</br>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2025 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2025</span>
+            <h3>創部１２年目</h3>
+
+            <p>
+              第５回定期演奏会(１０代目卒業ＬＩＶＥ)開催<br/>
+              ３度目となる合宿(１１代目)<br/>
+              １１代目引退公演「煌覇」開催</br>
+              高文連大会 特別賞(１２代目)</br>
+              <small>高文連大会にて」１０年連続入賞</small></br>
+              第２０回全九州・日本太鼓ジュニアコンクール大会出場(１２代目)
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2026 ===== -->
+        <div class="time-item">
+          <div class="time-dot"></div>
+
+          <div class="time-content">
+            <span class="year">2026</span>
+            <h3>創部１３代目</h3>
+
+            <p>
+              紫焔楽新春初ＬＩＶＥ開催(１３代目初舞台)<br/>
+              第６回定期演奏会(１１代目卒業ＬＩＶＥ)開催<br/>
+            </p>
+
+            <div class="time-photos slider">
+              <img src="img/2024_1.jpg" />
+              <img src="img/2024_2.jpg" />
+              <div class="dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>© Kyushu Sangyo High School Japanese Drum Club</div>
+
+      <div class="footer-links">
+        <span id="openPolicy">プライバシーポリシー</span> |
+        <span id="openTerms">利用規約</span>
+      </div>
+    </footer>
+
+    <!-- ポリシーモーダル -->
+    <div id="policyModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>プライバシーポリシー</h2>
+          <button class="close-btn" id="closePolicy">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            本サイトは、九州産業高校和太鼓部の演奏会情報を掲載する目的で運営されています。
+          </p>
+
+          <h4>1. 個人情報について</h4>
+          <p>
+            本サイトでは、利用者の個人情報を収集していません。<br />
+            検索機能は端末内で動作し、外部に情報を送信しません。
+          </p>
+
+          <h4>2. 掲載情報</h4>
+          <p>部員氏名等は、学校および本人の許可のもと掲載しています。</p>
+
+          <h4>3. アクセス解析</h4>
+          <p>アクセス解析ツールは使用していません。</p>
+
+          <h4>4. お問い合わせ</h4>
+          <p>掲載内容に関するお問い合わせは和太鼓部顧問までお願いします。</p>
         </div>
       </div>
     </div>
 
+    <!-- 利用規約モーダル -->
+    <div id="termsModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>利用規約</h2>
+          <button class="close-btn" id="closeTerms">✕</button>
+        </div>
 
-    <!-- ===== 2024 ===== -->
-    <div class="time-item">
-      <div class="time-dot"></div>
+        <div class="modal-body">
+          <h4>1. 目的</h4>
+          <p>
+            本サイトは和太鼓部の活動紹介および演奏会案内を目的としています。
+          </p>
 
-      <div class="time-content">
-        <span class="year">2024</span>
-        <h3>第6回定期演奏会</h3>
+          <h4>2. 免責事項</h4>
+          <p>
+            掲載情報には十分注意していますが、内容の正確性を保証するものではありません。<br />
+            本サイトの利用によって生じた損害について責任を負いません。
+          </p>
 
-        <p>
-          これまでで最大規模のステージへ。<br>
-          3学年そろった集大成。
-        </p>
+          <h4>3. 著作権</h4>
+          <p>サイト内の文章・写真・デザインの無断転載を禁止します。</p>
 
-        <div class="time-photos slider">
-          <img src="img/2024_1.jpg">
-          <img src="img/2024_2.jpg">
-          <div class="dots"></div>
+          <h4>4. 内容の変更</h4>
+          <p>本サイトの内容は予告なく変更・削除されることがあります。</p>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div>© Kyushu Sangyo High School Japanese Drum Club</div>
-
-  <div class="footer-links">
-    <span id="openPolicy">プライバシーポリシー</span> |
-    <span id="openTerms">利用規約</span>
-  </div>
-</footer>
-
-<!-- ポリシーモーダル -->
-<div id="policyModal" class="modal hidden">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>プライバシーポリシー</h2>
-      <button class="close-btn" id="closePolicy">✕</button>
-    </div>
-
-    <div class="modal-body">
-      <p>
-        本サイトは、九州産業高校和太鼓部の演奏会情報を掲載する目的で運営されています。
-      </p>
-
-      <h4>1. 個人情報について</h4>
-      <p>
-        本サイトでは、利用者の個人情報を収集していません。<br>
-        検索機能は端末内で動作し、外部に情報を送信しません。
-      </p>
-
-      <h4>2. 掲載情報</h4>
-      <p>
-        部員氏名等は、学校および本人の許可のもと掲載しています。
-      </p>
-
-      <h4>3. アクセス解析</h4>
-      <p>
-        アクセス解析ツールは使用していません。
-      </p>
-
-      <h4>4. お問い合わせ</h4>
-      <p>
-        掲載内容に関するお問い合わせは和太鼓部顧問までお願いします。
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- 利用規約モーダル -->
-<div id="termsModal" class="modal hidden">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>利用規約</h2>
-      <button class="close-btn" id="closeTerms">✕</button>
-    </div>
-
-    <div class="modal-body">
-      <h4>1. 目的</h4>
-      <p>
-        本サイトは和太鼓部の活動紹介および演奏会案内を目的としています。
-      </p>
-
-      <h4>2. 免責事項</h4>
-      <p>
-        掲載情報には十分注意していますが、内容の正確性を保証するものではありません。<br>
-        本サイトの利用によって生じた損害について責任を負いません。
-      </p>
-
-      <h4>3. 著作権</h4>
-      <p>
-        サイト内の文章・写真・デザインの無断転載を禁止します。
-      </p>
-
-      <h4>4. 内容の変更</h4>
-      <p>
-        本サイトの内容は予告なく変更・削除されることがあります。
-      </p>
-    </div>
-  </div>
-</div>
-
-  <!-- ===== JS ===== -->
-  <script src="script.js"></script>
-  
-</body>
+    <!-- ===== JS ===== -->
+    <script src="script.js"></script>
+  </body>
 </html>
-
