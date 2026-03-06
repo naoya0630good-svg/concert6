@@ -184,7 +184,7 @@ body {
 
 /* 開いた状態 */
 .song.open .song-detail {
-  max-height: 200px; /* 説明が長ければ増やす */
+  max-height: 250px; /* 説明が長ければ増やす */
   opacity: 1;
   margin-top: 14px;
   padding: 14px 20px;
