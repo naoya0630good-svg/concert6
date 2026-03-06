@@ -1,3 +1,5 @@
+let currentView = "home";
+
 /* ===============================
    タブ切り替え
 ================================ */
@@ -118,6 +120,11 @@ document.querySelectorAll(".member").forEach((member) => {
 
     closeMemberModal();
 
+    history.classList.add("hidden");
+    hero.classList.remove("hidden");
+    tabsArea.classList.remove("hidden");
+    program.classList.remove("hidden");
+
     // ヒーロー書き換え
     document.getElementById("heroTitle").textContent = name;
     document.getElementById("hellow").innerHTML = "▶ この部員の出演曲を表示中";
@@ -133,15 +140,43 @@ const searchModal = document.getElementById("searchModal");
 const closeSearch = document.getElementById("closeSearch");
 
 searchBtn.addEventListener("click", () => {
+  const history = document.getElementById("historySection");
+  if (history) history.classList.add("hidden");
+
+  const member = document.getElementById("memberModal");
+  if (member) member.classList.add("hidden");
+
   searchModal.classList.remove("hidden");
 });
 
 closeSearch.addEventListener("click", () => {
   searchModal.classList.add("hidden");
+
+  if (currentView === "home") {
+    hero.classList.remove("hidden");
+    tabsArea.classList.remove("hidden");
+    program.classList.remove("hidden");
+  }
+
+  if (currentView === "history") {
+    history.classList.remove("hidden");
+  }
 });
 
 searchModal.addEventListener("click", (e) => {
-  if (e.target === searchModal) searchModal.classList.add("hidden");
+  if (e.target === searchModal) {
+    searchModal.classList.add("hidden");
+
+    if (currentView === "home") {
+      hero.classList.remove("hidden");
+      tabsArea.classList.remove("hidden");
+      program.classList.remove("hidden");
+    }
+
+    if (currentView === "history") {
+      history.classList.remove("hidden");
+    }
+  }
 });
 
 /* ===============================
@@ -192,6 +227,10 @@ resultsBox.addEventListener("click", (e) => {
   const text = item.textContent.trim(); // ← これ超大事
 
   searchModal.classList.add("hidden");
+  history.classList.add("hidden");
+  hero.classList.remove("hidden");
+  tabsArea.classList.remove("hidden");
+  program.classList.remove("hidden");
 
   // ===== 学年を“確実に”取得 =====
   const grade = text.trim().charAt(0);
@@ -227,6 +266,7 @@ resultsBox.addEventListener("click", (e) => {
 ================================ */
 
 document.getElementById("homeBtn").addEventListener("click", () => {
+  currentView = "home";
   document.querySelector('[data-target="graduation11"]').style.display = "";
 
   document.querySelectorAll(".song").forEach((song) => {
@@ -290,6 +330,7 @@ console.log("診断:", {
 // ===== HISTORYを開く =====
 if (historyBtn) {
   historyBtn.addEventListener("click", () => {
+    currentView = "history";
     hero.classList.add("hidden");
     tabsArea.classList.add("hidden");
     program.classList.add("hidden");
@@ -451,22 +492,58 @@ const yearGalleryData = {
   ],
 
   2024: [
-    "img/2024_1.jpg",
-    "img/2024_2.jpg",
-    "img/2024_3.jpg",
-    "img/2024_4.jpg",
+    "https://i.postimg.cc/Jhcf9RpJ/IMG-0250.webp",
+    "https://i.postimg.cc/kgPh9k6k/IMG-0248.webp",
+    "https://i.postimg.cc/jdyYz6yZ/IMG-0247.webp",
+    "https://i.postimg.cc/NGr3c8CL/IMG-0198.webp",
+    "https://i.postimg.cc/5NVRWhFk/IMG-0257.webp",
+    "https://i.postimg.cc/508SPtp2/IMG-0196.webp",
+    "https://i.postimg.cc/Jn3jN27S/IMG-0243.webp",
+    "https://i.postimg.cc/pTvFLJQq/IMG-0231.webp",
+    "https://i.postimg.cc/NFzFm6T2/IMG-0197.webp",
+    "https://i.postimg.cc/15V5bNwv/IMG-0253.webp",
+    "https://i.postimg.cc/tgBjsXWK/IMG-0240.webp",
+    "https://i.postimg.cc/Fsbs9XC9/IMG-0232.webp",
+    "https://i.postimg.cc/VLf2CyLQ/IMG-0246.webp",
+    "https://i.postimg.cc/L5HQLfSk/IMG-0234.webp",
+    "https://i.postimg.cc/BvrdLXtY/IMG-0262.webp",
   ],
 
   2025: [
-    "img/2024_1.jpg",
-    "img/2024_2.jpg",
-    "img/2024_3.jpg",
-    "img/2024_4.jpg",
+    "https://i.postimg.cc/qMr3rTXY/IMG-0201.webp",
+    "https://i.postimg.cc/d36tvzw9/IMG-0226.webp",
+    "https://i.postimg.cc/m2KKkmk6/IMG-0229.webp",
+    "https://i.postimg.cc/28LXsnG0/IMG-0223.webp",
+    "https://i.postimg.cc/Vs2c0fH4/IMG-0225.webp",
+    "https://i.postimg.cc/wTDnthNH/IMG-0227.webp",
+    "https://i.postimg.cc/CMkcJwx4/IMG-0221.webp",
+    "https://i.postimg.cc/jSpW8Y5Q/IMG-0245.webp",
+    "https://i.postimg.cc/HsjVdk8P/IMG-0244.webp",
+    "https://i.postimg.cc/wTSTzcdC/IMG-0260.webp",
+    "https://i.postimg.cc/HnFHpHFP/IMG-0215.webp",
+    "https://i.postimg.cc/Hxh12dYv/IMG-0216.webp",
+    "https://i.postimg.cc/FHVRxd26/IMG-0220.webp",
+    "https://i.postimg.cc/brnYSsxg/IMG-0217.webp",
+    "https://i.postimg.cc/yYFYV3Yn/IMG-0218.webp",
+    "https://i.postimg.cc/QCcsxvD2/IMG-0219.webp",
+    "https://i.postimg.cc/zvwZ1WSL/IMG-0239.webp",
+    "https://i.postimg.cc/Gmg0rbYJ/IMG-0238.webp",
+    "https://i.postimg.cc/QCJPzDhc/IMG-0222.webp",
+    "https://i.postimg.cc/7LJRk0qr/IMG-0199.webp",
+    "https://i.postimg.cc/7ZdBmh0C/IMG-0205.webp",
+    "https://i.postimg.cc/Y2RbTbQ2/IMG-0256.webp",
+    "https://i.postimg.cc/hjr1WtQS/IMG-0241.webp",
+    "https://i.postimg.cc/J4tcvmrV/IMG-0236.webp",
+    "https://i.postimg.cc/DZ21g3jL/IMG-0237.webp",
   ],
 
   2026: [
     "https://i.postimg.cc/L8xSYkzg/IMG-0202.webp",
     "https://i.postimg.cc/vBDyM4jp/IMG-0206.webp",
+    "https://i.postimg.cc/P5Vqcs5b/IMG-0394.webp",
+    "https://i.postimg.cc/BZ5n31vB/IMG-0393.webp",
+    "https://i.postimg.cc/V6QzQYQq/IMG-0391.webp",
+    "https://i.postimg.cc/9QD2D4cy/IMG-0392.webp",
   ],
 };
 
