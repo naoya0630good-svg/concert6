@@ -544,6 +544,8 @@ const yearGalleryData = {
     "https://i.postimg.cc/BZ5n31vB/IMG-0393.webp",
     "https://i.postimg.cc/V6QzQYQq/IMG-0391.webp",
     "https://i.postimg.cc/9QD2D4cy/IMG-0392.webp",
+    "https://i.postimg.cc/3N4C0XSq/IMG-0398.webp",
+    "https://i.postimg.cc/CxYPX26f/IMG-0399.webp",
   ],
 };
 
